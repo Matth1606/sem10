@@ -69,6 +69,7 @@ header .wrapper{
     display: flex;
     justify-content: space-between;
     height: 70px;
+    align-items: center;
 }
 
 header ul{
@@ -88,6 +89,15 @@ header a:hover{
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.hero .wrapper{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
     height: 600px;
 }
 
@@ -95,3 +105,33 @@ header a:hover{
     line-height: 28px;
     color: white;
 }
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    width: 600px;
+    background-color: rgba(226, 82, 84, 90%);
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.hero h1, .hero p{
+    padding: 0;
+    margin: 0;
+}
+
+.hero button{
+    align-self: flex-end;
+    width: 110px;
+    height: 40px;
+    background-color: #c0392b;
+    border: none;
+    padding: 0;
+    font: 400 1.8rem Roboto, sans-serif;
+    line-height: 28px;
+    color: white;
+}
+
+
+/* Produits */
