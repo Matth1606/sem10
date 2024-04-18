@@ -32,12 +32,15 @@ h1{
 h2{
     font: 700 3.6rem "Josefin Sans", sans-serif;
     line-height: 41px;
+    margin: 50px 0 0;
 }
 
 h3{
     font: 700 2.2rem "Josefin Sans", sans-serif;
     color: #e25254;
     line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
 }
 
 p{
@@ -56,6 +59,10 @@ a{
     font: 400 4.2rem "Josefin Sans", sans-serif;
     color: black;
     margin: 0;
+}
+
+.sous{
+    margin: 10px 0 10px;
 }
 
 
@@ -95,7 +102,6 @@ header a:hover{
 
 .hero .wrapper{
     display: flex;
-    position: relative;
     justify-content: flex-end;
     align-items: center;
     height: 600px;
@@ -135,3 +141,145 @@ header a:hover{
 
 
 /* Produits */
+
+.produits{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+.produits .wrapper{
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.boite{
+    display: flex;
+    height: 230px;
+    width: 375px;
+    background-color: white;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.boite:hover{
+    background-color: #e25254;
+    color: white;
+}
+
+.boite:hover h3, .boite:hover span{
+    color: white;
+}
+
+
+/* Conseils */
+
+.conseils{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../images/conseil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conseils .wrapper{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.conseils .sous, .conseils h2{
+    color: white;
+}
+
+.conseils article{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.conseils article p{
+    color: black;
+}
+
+.conseils h3{
+    margin: 8px 0 0;
+}
+
+.conseils aside{
+    height: 335px;
+    width: 375px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    padding: 37px;
+}
+
+.conseils .wrapper div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.conseils div a{
+    align-self: flex-end;
+    color: black;
+    margin-top: 20px;
+}
+
+.conseils .material-icons{
+    font-size: 3rem;
+}
+
+
+/* Footer */
+
+footer{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e25254;
+}
+
+footer .wrapper{
+    height: 60px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+
+/* Modale */
+
+.modale {
+    display: none;
+    justify-content: center;
+    align-items: center;
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+ 
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 70%);
+}
+ 
+.modale.visible {
+    display: flex;
+}
+
+.modale p{
+    font: 700 50rem Roboto, sans-serif;
+    color: #c0392b;
+}
